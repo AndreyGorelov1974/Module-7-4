@@ -28,11 +28,12 @@ int main()
 	int width, height;
 	std::cin >> width >> height;
 
-	for (int y = 1; y <= width; y++) {
-		for (int x = 1; x <= height; x++) {
+	for (int y = 1; y <= height; y++) {
+		for (int x = 1; x <= width; x++) {
 			if (x == 1 || x == width) std::cout << "|";
 			else if (y == 1 || y == height) std::cout << "-";
 			else std::cout << " ";
 		}
+		std::cout << std::endl;
 	}
 }
